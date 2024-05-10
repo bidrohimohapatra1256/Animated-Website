@@ -1,0 +1,43 @@
+body{
+    background-color: red;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main-section{
+    background-color: black;
+    height: 10vh;
+    width: 100%;
+    color: rgb(33,33,33);
+    display: grid;
+    place-items: center;
+    font-size: 8rem;
+    animation: fadeIn 2s ease-in-out;
+}
+.main-section h1{
+    position: absolute;
+    top: 208px;
+    left: 280px;
+    animation: slideIn 2s ease-in-out;
+}
+.main-section img {
+    position: absolute;
+    height: 400px;
+    transform: rotate(338deg);
+    filter: drop-shadow(0 0 200px rgb (136, 162, 162));
+}
+.main-section .menu{
+    position: absolute;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    list-style: none;
+    right: 64PX;
+    top: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
