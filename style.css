@@ -28,6 +28,7 @@ body{
     height: 400px;
     transform: rotate(338deg);
     filter: drop-shadow(0 0 200px rgb (136, 162, 162));
+    animation: rotate 2s linear;
 }
 .main-section .menu{
     position: absolute;
@@ -40,4 +41,122 @@ body{
     text-transform: uppercase;
     font-weight: bold;
     
+}
+.main-section .menu li{
+    margin-top: 64px;
+    transition: all .5s ease;
+    animation: fadeInLeft 1s ease-in-out;
+}
+.main-section .menu li:hover{
+    box-shadow: 0 0 10px orange;
+    cursor: pointer;
+}
+.main-section .menu li:nth-child(2){
+    color: rgb(225, 179,0);
+    animation-delay:0.2s ;
+}
+.main-section .menu li:nth-child(3){
+    animation-delay:0.4s ;
+}
+.main-section .menu li:nth-child(4){
+    animation-delay:0.6s ;
+}
+.logo img{
+    position: absolute;
+    height: 100px;
+    top: -3px;
+    left: 0;
+    animation: bounce 2s ease-in-out infinite;
+}
+.text
+{
+    position: absolute;
+    font-size: 2rem;
+    width: 37%;
+    left: 105px;
+    animation:fadeInup 1s ease-in-out ;
+}
+.text span{
+    color: rgb(225,179,0);
+    font-weight: bold;
+}
+.text p{
+    color: white;
+    font-size: 1rem;
+    margin-top: 4rem;
+
+}
+.text li{
+    display: flex;
+    list-style: none;
+    color: rgb(225,179,0);
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 10px;
+}
+.back{
+    position: absolute;
+    color: orange;
+    font-size: 2rem;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+.back i{
+    color: white;
+}
+.para{
+    font-size: 2rem;
+    color: orange;
+    position: absolute;
+    bottom: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+.social{
+    position: absolute;
+    display: flex;
+    display: block;
+    font-size: 3rem;
+    right: 0;
+}
+.social a{
+    display: block;
+    color: rgb(128, 255, 0);
+    transition: all.5s ease;
+    animation: bounce 2s ease-in-out infinite;
+}
+.social a:hover{
+    box-shadow: 0 0 10px chartreuse;
+}
+.nike{
+    color: white;
+    font-size: 3rem;
+    margin-top: 50rem;
+    animation: slideIn 2s ease-in-out;
+
+}
+/* animation */
+@keyframesfadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes slideIn{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(338deg);
+    }
+    100%{
+        transform: rotate(698deg);
+    }
 }
