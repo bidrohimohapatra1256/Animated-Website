@@ -135,7 +135,7 @@ body{
     animation: slideIn 2s ease-in-out;
 
 }
-/* animation */
+/* animation
 @keyframesfadeIn{
     0%{
         opacity: 0;
@@ -159,4 +159,4 @@ body{
     100%{
         transform: rotate(698deg);
     }
-}
+} */
