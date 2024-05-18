@@ -304,15 +304,6 @@ function DurTime (e) {
 		
 };
 
-// Event listeners
-playBtn.addEventListener('click', () => {
-  const isPlaying = musicContainer.classList.contains('play');
 
-  if (isPlaying) {
-    pauseSong();
-  } else {
-    playSong();
-  }
-});
 
 
