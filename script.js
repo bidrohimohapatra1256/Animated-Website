@@ -18,22 +18,6 @@ const cardsEl = [];
 
 // Store card data
 const cardsData = getCardsData();
-
-// const cardsData = [
-//   {
-//     question: 'What must a variable begin with?',
-//     answer: 'A letter, $ or _'
-//   },
-//   {
-//     question: 'What is a variable?',
-//     answer: 'Container for a piece of data'
-//   },
-//   {
-//     question: 'Example of Case Sensitive Variable',
-//     answer: 'thisIsAVariable'
-//   }
-// ];
-
 // Create all cards
 function createCards() {
   cardsData.forEach((data, index) => createCard(data, index));
@@ -47,22 +31,6 @@ function createCard(data, index) {
   if (index === 0) {
     card.classList.add('active');
   }
-
-  card.innerHTML = `
-  <div class="inner-card">
-  <div class="inner-card-front">
-    <p>
-      ${data.question}
-    </p>
-  </div>
-  <div class="inner-card-back">
-    <p>
-      ${data.answer}
-    </p>
-  </div>
-</div>
-  `;
-
   card.addEventListener('click', () => card.classList.toggle('show-answer'));
 
   // Add to DOM cards
@@ -110,7 +78,6 @@ nextBtn.addEventListener('click', () => {
 });
 
 // Prev button
-prevBtn.addEventListener('click', () => {
   cardsEl[currentActiveCard].className = 'card right';
 
   currentActiveCard = currentActiveCard - 1;
