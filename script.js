@@ -492,11 +492,7 @@ $(document).ready(function(){
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Fantasy");
 	})
-	$('#history').click(function(){
-		getMoviesByGenre(36);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("History");
-	})
+	
 	$('#horror').click(function(){
 		getMoviesByGenre(27);
 		$('#movie-grid').html(genreHTML);
