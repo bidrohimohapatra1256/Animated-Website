@@ -513,11 +513,6 @@ $(document).ready(function(){
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Science Fiction");
 	})
-	$('#thriller').click(function(){
-		getMoviesByGenre(53);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Thriller");
-	})
 
 	//==============================================================================
 	//====================== Search Function =======================================
