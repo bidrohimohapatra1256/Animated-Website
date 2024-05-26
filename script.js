@@ -502,17 +502,6 @@ $(document).ready(function(){
 		getMoviesByGenre(10402);
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Music");
-	})
-	$('#romance').click(function(){
-		getMoviesByGenre(10749);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Romance");
-	})
-	$('#scifi').click(function(){
-		getMoviesByGenre(878);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Science Fiction");
-	})
 
 	//==============================================================================
 	//====================== Search Function =======================================
