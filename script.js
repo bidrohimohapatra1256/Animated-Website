@@ -498,10 +498,7 @@ $(document).ready(function(){
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Horror");
 	})
-	$('#music').click(function(){
-		getMoviesByGenre(10402);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Music");
+
 
 	//==============================================================================
 	//====================== Search Function =======================================
