@@ -128,28 +128,3 @@ body{
 .social a:hover{
     box-shadow: 0 0 10px chartreuse;
 }
-.nike{
-    color: white;
-    font-size: 3rem;
-    margin-top: 50rem;
-    animation: slideIn 2s ease-in-out;
-
-}
- animation
-@keyframesfadeIn{
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-@keyframes slideIn{
-    0%{
-        transform: translateX(-100%);
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
-
