@@ -125,6 +125,3 @@ body{
     transition: all.5s ease;
     animation: bounce 2s ease-in-out infinite;
 }
-.social a:hover{
-    box-shadow: 0 0 10px chartreuse;
-}
