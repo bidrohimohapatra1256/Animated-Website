@@ -557,11 +557,4 @@ async function startApp() {
     console.log(emailResult);
 
     // Simulate auth
-    const authResult = await AuthService.call('auth.authUser', {
-      username: 'admin',
-      password: 'password',
-    });
-
-    console.log('Auth result:', authResult);
-  } catch (error) {
-    console.log('Error:', err	
+    	
