@@ -550,11 +550,4 @@ async function startApp() {
 
     // Simulate sending email
     const emailResult = await EmailService.call('email.sendEmail', {
-      recipient: newUser.email,
-      subject: 'Welcome to our platform!',
-      content: 'Thank you for signing up',
-    });
-    console.log(emailResult);
-
-    // Simulate auth
-    	
+      recipient: newUser.emai	
