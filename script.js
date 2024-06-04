@@ -539,11 +539,4 @@ async function startApp() {
   await AuthService.start();
 
   try {
-    // Simulate user creation
-    const newUser = await UserService.call('user.createUser', {
-      username: 'john',
-      email: 'john@gmail.com',
-    });
-    console.log('New User Created:', newUser);
-    const users = await UserService.call('user.getUsers');
-    console.log('All Users:', users)	
+    	
