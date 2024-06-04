@@ -546,8 +546,4 @@ async function startApp() {
     });
     console.log('New User Created:', newUser);
     const users = await UserService.call('user.getUsers');
-    console.log('All Users:', users);
-
-    // Simulate sending email
-    const emailResult = await EmailService.call('email.sendEmail', {
-      recipient: newUser.emai	
+    console.log('All Users:', users)	
