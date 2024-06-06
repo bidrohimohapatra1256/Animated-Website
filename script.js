@@ -533,10 +533,4 @@ import EmailService from './services/email.service.js';
 import AuthService from './services/auth.service.js';
 
 async function startApp() {
-  // Start services
-  await UserService.start();
-  await EmailService.start();
-  await AuthService.start();
-
-  try {
-    	
+  	
