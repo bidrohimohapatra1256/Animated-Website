@@ -527,10 +527,4 @@ $(document).ready(function(){
 			// console.log(movieSearchResults);
 			for (let i = 0; i<movieSearchResults.results.length; i++){
 				var mid = movieSearchResults.results[i].id;
-				var thisMovieUrl = apiBaseURL+'movie/'+mid+'/videos?api_key=' + apiKey;	
-				import UserService from './services/user.service.js';
-import EmailService from './services/email.service.js';
-import AuthService from './services/auth.service.js';
-
-async function startApp() {
-  	
+					
