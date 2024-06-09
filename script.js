@@ -522,9 +522,4 @@ $(document).ready(function(){
 	function searchMovies(){
 		//need to include query in url. (ex: &query=boss+baby)
 		const searchMovieURL = apiBaseURL + 'search/movie?api_key=' + apiKey + '&language=en-US&page=1&include_adult=false&query=' + searchTerm;
-			// console.log(searchMovieURL);
-		$.getJSON(searchMovieURL, function(movieSearchResults){
-			// console.log(movieSearchResults);
-			for (let i = 0; i<movieSearchResults.results.length; i++){
-				var mid = movieSearchResults.results[i].id;
-					
+			
