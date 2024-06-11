@@ -496,17 +496,4 @@ $(document).ready(function(){
 	$('#horror').click(function(){
 		getMoviesByGenre(27);
 		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Horror");
-	})
-
-
-	//==============================================================================
-	//====================== Search Function =======================================
-	//==============================================================================
-
-	//Run function searchMovies AFTER an input has been submitted. Submit form first.
-	//Run searchMovies once to add an empty html to movie-grid using .html(). Then, overwrite it with the new html using .append(). Need to use .append() to overwrite or all the images will display on top of each other.
-
-	var searchTerm = '';
-	searchMovies();
-	
+		$('#movieGenreLabel').html("Horror")
