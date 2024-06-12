@@ -472,28 +472,4 @@ $(document).ready(function(){
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Comedy");
 	})
-	$('#crime').click(function(){
-		getMoviesByGenre(80);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Crime");
-	})
-	$('#drama').click(function(){
-		getMoviesByGenre(18);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Drama");
-	})
-	$('#family').click(function(){
-		getMoviesByGenre(10751);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Family");
-	})
-	$('#fantasy').click(function(){
-		getMoviesByGenre(14);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Fantasy");
-	})
 	
-	$('#horror').click(function(){
-		getMoviesByGenre(27);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Horror")
