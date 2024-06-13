@@ -470,6 +470,3 @@ $(document).ready(function(){
 	$('#comedy').click(function(){
 		getMoviesByGenre(35);
 		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Comedy");
-	})
-	
