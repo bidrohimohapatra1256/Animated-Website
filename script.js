@@ -467,6 +467,4 @@ $(document).ready(function(){
 		$('#movie-grid').html(genreHTML);
 		$('#movieGenreLabel').html("Animation");
 	})
-	$('#comedy').click(function(){
-		getMoviesByGenre(35);
-		$('#movie-grid').html(genreHTML);
+	
