@@ -448,17 +448,4 @@ $(document).ready(function(){
 		$('#movieGenreLabel').html("Now Playing");
 	})		
 	$('.nowPlaying').click(function(){
-		getNowPlayingData();
-		$('#movie-grid').html(nowPlayingHTML);
-		$('#movieGenreLabel').html("Now Playing");
-	})
-	$('#action').click(function(){
-		getMoviesByGenre(28);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Action");
-	})
-	$('#adventure').click(function(){
-		getMoviesByGenre(12);
-		$('#movie-grid').html(genreHTML);
-		$('#movieGenreLabel').html("Adventure");
-	})
+		
