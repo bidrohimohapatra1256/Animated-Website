@@ -421,31 +421,4 @@ $(document).ready(function(){
 										genreHTML += '<div class="col-sm-3 btn btn-primary">4:10 PM' + '</div>';
 										genreHTML += '<div class="col-sm-3 btn btn-primary">5:30 PM' + '</div>';
 										genreHTML += '<div class="col-sm-3 btn btn-primary">8:00 PM' + '</div>';
-										genreHTML += '<div class="col-sm-3 btn btn-primary">10:30 PM' + '</div>';
-									genreHTML += '</div>'; //close movieDetails
-								genreHTML += '</div>'; //close modal-content
-							genreHTML += '</div>'; //close modal-dialog
-						genreHTML += '</div>'; //close modal
-					genreHTML += '</div>'; //close off each div
-					$('#movie-grid').append(genreHTML);
-					//Without this line, there is nowhere for the posters and overviews to display so it doesn't show up 
-					// $('#movieGenreLabel').html("Now Playing");
-					//h1 will change depending on what is clicked. Will display "Now Playing" in this case.
-				})
-			}
-		}) 
-	}
-	// call getMoviesByGenre using click function but call getNowPlayingData on default.
-	getNowPlayingData();
-
-	//Reset HTML strings to empty to overwrite with new one!
-	var nowPlayingHTML = '';
-	var genreHTML = '';
-
-	$('.navbar-brand').click(function(){
-		getNowPlayingData();
-		$('#movie-grid').html(nowPlayingHTML);
-		$('#movieGenreLabel').html("Now Playing");
-	})		
-	$('.nowPlaying').click(function(){
-		
+										genreHTML += '<div class="col-sm-3 btn btn-primary">10:30 PM' + '</div>
